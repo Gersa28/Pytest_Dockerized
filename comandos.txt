@@ -1,0 +1,20 @@
+$ pip install -r test-requirements.txt
+
+To run open a shell
+
+$ docker-compose build
+
+$ docker-compose run test sh
+
+This will open the docker shell and you can run one of the following commands:
+Run the entire test suite
+$ pytest 
+
+Run the tests for a certain file matching a keyword
+$ pytest -k <test_file_name>
+
+Run tests while printing all variables and verbose output
+$ pytest -vvl
+
+To exit the shell
+$ exit
